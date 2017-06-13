@@ -1,0 +1,30 @@
+body {
+    background: url("../img/micro.png");
+    background-size: cover;
+}
+
+nav {
+  background-color: white;
+}
+
+ul > li > a{
+  color: black;
+}
+
+#logo {
+  height: 65px;
+}
+
+#formulario {
+ margin-top: 12%;
+}
+
+form {
+  background-color: rgba(255,255,255,.8);
+}
+
+#boton-enviar {
+  margin-left: 35%;
+  background-color: white;
+  color: black;
+}

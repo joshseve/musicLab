@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+     <!--Si hago un CSS va aquí-->
+     <link type="text/css" rel="stylesheet" href="assets/css/main.css"/>
+     <link rel="shortcut icon" href="assets/img/favicon.jpg">
+    <title>MUSICOS</title>
+  </head>
+  <body>
+
+    <header>
+
+   <nav>
+     <div class="nav-wrapper">
+       <a href="#" class="brand-logo center"><img src="assets/img/musicland.png" alt="" id="logo"></a>
+       <ul id="nav-mobile" class="left hide-on-med-and-down">
+         <li><a href="sass.html">Lugares de Ensayo</a></li>
+         <li><a href="badges.html">Eventos</a></li>
+         <li><a href="collapsible.html">Shop HERE</a></li>
+       </ul>
+     </div>
+   </nav>
+    </header>
+
+     <section id="formulario">
+       <div class="row container">
+           <form class="col s12">
+             <div class="row">
+               <div class="input-field col s6">
+                 <input id="last_name" type="text" class="validate">
+                 <label for="last_name">Nombre</label>
+               </div>
+               <div class="input-field col s6">
+                 <input id="last_name" type="text" class="validate">
+                 <label for="last_name">Apellidos</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col s12">
+                 <input  type="email" class="validate">
+                 <label for="password">Correo Electrónico</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col s12">
+                 <input type="password" class="validate">
+                 <label for="email">Contraseña</label>
+               </div>
+             </div>
+           </form>
+         </div>
+         <button class="btn waves-effect waves-light" type="submit" name="action" id="boton-enviar">ENVIAR
+           <i class="material-icons right">send</i>
+         </button>
+
+         <div class="fb-login-button" data-width="250px" data-max-rows="5" data-size="medium"
+         data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false"
+         data-use-continue-as="false"></div>
+     </section>
+
+
+
+  <!-- <fb:login-button
+    scope="public_profile,email"
+    onlogin="checkLoginState();">
+  </fb:login-button> -->
+
+  <script>
+window.fbAsyncInit = function() {
+ FB.init({
+   appId      : '739164896257085',
+   cookie     : true,
+   xfbml      : true,
+   version    : 'v2.8'
+ });
+ FB.AppEvents.logPageView();
+};
+
+(function(d, s, id){
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <!--Mi archivo en JS va aquí -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+  </body>
+</html>
