@@ -9,25 +9,50 @@
      <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
      <!--Si hago un CSS va aquí-->
      <link type="text/css" rel="stylesheet" href="assets/css/main.css"/>
-    <title>MUSICOS</title>
+    <title>MusicLand</title>
   </head>
   <body>
 
     <header>
-
-   <nav>
-     <div class="nav-wrapper">
-       <a href="#" class="brand-logo center"><img src="assets/img/musicland.png" alt="" id="logo"></a>
-       <ul id="nav-mobile" class="left hide-on-med-and-down">
-         <li><a href="sass.html">Lugares de Ensayo</a></li>
-         <li><a href="badges.html">Eventos</a></li>
-         <li><a href="collapsible.html">Shop HERE</a></li>
-       </ul>
-     </div>
-   </nav>
+       <nav>
+         <div class="nav-wrapper">
+           <a href="#" class="brand-logo center"><img src="assets/img/musicland.png" alt="" id="logo"></a>
+           <ul id="nav-mobile" class="left hide-on-med-and-down">
+             <li><a href="sass.html">Lugares de Ensayo</a></li>
+             <li><a href="badges.html">Eventos</a></li>
+             <li><a href="collapsible.html">Shop HERE</a></li>
+           </ul>
+         </div>
+       </nav>
     </header>
+    <div class=" car">
+     <div class="carousel  carousel-slider">
+       <div class="carousel-item center white-text ensayos" href="#one!">
+         <h5 class="letra__grande z-depth-3">¿Ensayamos?</h5>
+         <h2 class=" letra__grande  z-depth-3 white-text">Salas de ensayo y estudios de grabacion , cerca de ti.</h2>
+      </div>
+      <div class="carousel-item center white-text comunidad" href="#two!">
+        <h5 class="letra__grande z-depth-3 ">Comunidad.</h5>
+        <h2 class=" letra__grande z-depth-3 white-text">Conectate con músicos de todas partes</h2>
+        <h6>Haz amigos y comparte tu música. </h6>
+     </div>
+     <div class="carousel-item center white-text conciertos" href="#three!">
+       <h5 class="letra__grande z-depth-4">Eventos.</h5>
+       <h2 class=" letra__grande z-depth-4 white-text">Enterate de los proximos conciertos y festivales, en tu ciudad</h2>
+       <h6>No olvidarás nunca más una venta de boletos.</h6>
+    </div>
+    <div class="carousel-item center white-text musica" href="#four!">
+      <h5 class="letra__grande z-depth-3">Descubre</h5>
+      <h2 class=" letra__grande z-depth-3 white-text">Enterate de las ultimas noticias en el mundo de la música</h2>
+   </div>
+       <!-- <a class="carousel-item" href="#two!"><img src="assets/img/musica.jpg" class="img"></a>
+       <a class="carousel-item" href="#three!"><img src="assets/img/concierto.jpg" class="img"></a>
+       <a class="carousel-item" href="#four!"><img src="assets/img/ensayos.jpg" class="img"></a>
+       <a class="carousel-item" href="#five!"><img src="assets/img/musica.jpg" class="img"></a> -->
 
-     <section id="formulario">
+     </div>
+  </div>
+    <section id="formulario">
        <div class="row container">
            <form class="col s12">
              <div class="row">
@@ -63,37 +88,38 @@
          data-use-continue-as="false"></div>
      </section>
 
-
-
   <!-- <fb:login-button
     scope="public_profile,email"
     onlogin="checkLoginState();">
   </fb:login-button> -->
 
   <script>
-window.fbAsyncInit = function() {
- FB.init({
-   appId      : '739164896257085',
-   cookie     : true,
-   xfbml      : true,
-   version    : 'v2.8'
- });
- FB.AppEvents.logPageView();
-};
+            window.fbAsyncInit = function() {
+             FB.init({
+               appId      : '739164896257085',
+               cookie     : true,
+               xfbml      : true,
+               version    : 'v2.8'
+             });
+             FB.AppEvents.logPageView();
+            };
 
-(function(d, s, id){
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-    <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+            (function(d, s, id){
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) {return;}
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <!--Mi archivo en JS va aquí -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/main.js">
+
+  </script>
 
   </body>
 </html>

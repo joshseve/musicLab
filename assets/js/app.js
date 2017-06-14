@@ -6,7 +6,7 @@
 
    {
        status: 'connected',
-       authResponse: {
+       authResponse:{
            accessToken: '...',
            expiresIn:'...',
            signedRequest:'...',
